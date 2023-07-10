@@ -7,4 +7,4 @@ open browser on localhost:9000
 
 ## Where is error?
 
-error is in **konva/src/test-konva.tsx** file
+error is in **konva/src/root.component.tsx** file

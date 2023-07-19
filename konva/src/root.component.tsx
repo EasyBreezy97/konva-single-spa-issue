@@ -30,12 +30,12 @@ const App = () => {
       {/* -------------------------------- */}
 
       {/* ----- this have freeze error (uncomment to see the error) -------- */}
-      {/* <Stage width={window.innerWidth} height={window.innerHeight}>
+      <Stage width={window.innerWidth} height={window.innerHeight}>
         <Layer>
           <Text text="Try click on rect" />
           <ColoredRect />
         </Layer>
-      </Stage> */}
+      </Stage>
       {/* -------------------------------- */}
     </>
   );

@@ -1,44 +1,13 @@
-import React, { useState } from "react";
-import { Stage, Layer, Rect, Text } from "react-konva";
-import Konva from "konva";
-
-const ColoredRect = () => {
-  const [color, setColor] = useState("green");
-
-  const handleClick = () => {
-    setColor(Konva.Util.getRandomColor());
-  };
-
-  return (
-    <Rect
-      x={20}
-      y={20}
-      width={50}
-      height={50}
-      fill={color}
-      shadowBlur={5}
-      onClick={handleClick}
-    />
-  );
-};
+import { Stage, Layer, Rect } from "react-konva";
 
 const App = () => {
   return (
-    <>
-      {/* ----- this should display ------ */}
-      <div>Content</div>
-      {/* -------------------------------- */}
-
-      {/* ----- this have freeze error (uncomment to see the error) -------- */}
-      <Stage width={window.innerWidth} height={window.innerHeight}>
-        <Layer>
-          <Text text="Try click on rect" />
-          <ColoredRect />
-        </Layer>
-      </Stage>
-      {/* -------------------------------- */}
-    </>
+    <Stage width={window.innerWidth} height={window.innerHeight}>
+      <Layer>
+        <Rect width={100} height={100} fill="red" shadowBlur={10} />
+      </Layer>
+    </Stage>
+    // <div>Mounted</div>
   );
 };
-
 export default App;
